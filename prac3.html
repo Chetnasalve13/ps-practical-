@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><b>Registration Form </b></title>
+<style>
+body {
+font-family: Calibri, sans-serif;
+background-image:url('https://img.freepik.com/free-vector/blue-curve-frame-template_53876-114600.jpg?size=626&ext=jpg&ga=GA1.2.927287044.1672550458&semt=ais') ;
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h2 {
+color: #00060b;
+text-align: center; /* Center align the title */
+}
+form {
+background-color: #98deff;
+max-width: 500px;
+margin: 0 auto;
+padding: 30px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+display: block;
+margin-bottom: 10px;
+color: #333333;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #cccccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-bottom: 15px;
+background-color: #ffffff; /* Set background color to white */
+}
+select {
+width: 100%;
+padding: 10px;
+border: 1px solid #cccccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-bottom: 15px;
+}
+input[type="submit"] {
+background-color: #0d9ce9;
+color: #300606;
+border: none;
+padding: 12px 24px;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background-color: #3a57da;
+}
+</style>
+</head>
+<body>
+<h2> Registration from </h2>
+<img src="https://media.istockphoto.com/id/1206474707/vector/writers-create-book-mobile-app-page-onboard-screen-set-people-enjoying-writing-hobby-typing.jpg?s=612x612&w=0&k=20&c=f8MhrdmHDo8BtOaAoWh6qA_iqLUuuhAvYm2J4kfWIk0=" style="display: block; margin: 0 auto 10px; width: 550px; height: 250px;">
+<form action="/apply" method="POST">
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" required>
+<label for="resume">Resume (PDF or Word):</label>
+<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+</select>
+<input type="submit" value="Submit Application">
+</form>
+</body>
+</html>
